@@ -19,5 +19,3 @@ RUN javac -classpath "$SPARK_HOME/jars/*" PredictionApplication.java
 # Command to run the Spark job for parallel model training
 CMD ["java", "-classpath", "$SPARK_HOME/jars/*:.","ParallelModelTraining"]
 
-# You can also add a separate CMD for running the prediction application if needed
-# CMD ["java", "-classpath", "$SPARK_HOME/jars/*:.","PredictionApplication"]
